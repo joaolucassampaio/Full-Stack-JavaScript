@@ -1,0 +1,160 @@
+<!--Abra com o Live Server para estudar!-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/01-Fundamentos/style.css">
+    <title>Fundamentos Javascript</title>
+</head>
+<body>
+    <!--Lembre-se, a organização das seções está sendo feito pela nomenclatura BEM (Block Element Modifier).-->
+    <main> 
+        <section class="hero"> <!--Seção principal-->
+            <img class="hero__background" src="https://i.pinimg.com/originals/7a/fb/04/7afb0491c91b2f9e9aac56667c3be677.jpg" alt="logo java script"> 
+            <div class="hero__foreground">
+                <h1 class="hero__title">JavaScript</h1>
+                <p class="hero__text">Fundamentos Básicos do JavaScript</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">O que é uma Linguagem de Programação?</h2>
+            <p class="section__text">É um conjunto de códigos que contém
+                instruções para o computador. Diferente de linguagem de marcação (como HTML, XML, YAML etc) e de linguagem de estilização (como CSS). Alguns exemplos de linguagens de programação: C, C++, Java, C#, PHP, Phyton, Ruby, Javascript, Go, Elixir, Dart e muitas outras.</p>
+            <p class="section__text">As linguagens de programação podem ser de alto nível ou de baixo nível. Sendo, as primeiras, mais fáceis de compreender e mais próximas da linguagem humamana. Enquanto, as segundas, são mais próximas do nível de entendimento do hardware. </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">O que é Javascript?</h2>
+            <img class="section__img" src="https://hermes.dio.me/articles/cover/1caddefa-9a2d-4d9e-aa3d-d71661d9af6d.jpg">
+            <p class="section__text">Javascript é uma linguagem de programação multiparadigma e de alto nível, criada em 1995 por Brendan Eich para ser usada pelo Netscape. Seu nome oficial é ECMAScript. Ela é a principal linguagem de programação usada pelos navegadores web e, junto com HTML e CSS, forma as três principais tecnologias da web. Também pode ser usada fora dos navegadores através de runtimes como o Node.js </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Tipos de Dados</h2>
+            <p class="section__text">Em uma linguagem de programação, dados referem-se a informações que são manipuladas e processadas pelos programas. No javascript (e em outras linguagens de programação) os dados podem ser representados em diferentes formas:</p>
+            <h3 class="section__title-list">Tipos Primitivos</h3>
+            <ol class="section__list">
+                <li>Number e Bignt</li>
+                <li>String</li>
+                <li>Boolean</li>
+                <li>Null e Undefined</li>
+            </ol>
+            <p class="section__text">Os primeiros retornam valores numéricos, sendo o Bignt para números muito grandes (quando o valor possui muitas casas decimais, usa-se a letra "n" no final do número, para se evitar erro). O segundo retorna valores de texto. O terceiro retorna valores "True" ou "False". Já os últimos, retornam valores vazios e indefinidos, respectivamente.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Variáveis</h2>
+            <p class="section__text">Variáveis são elementos fundamentais na programação, servindo como contêineres para armazenar e manipular dados. No Javascript existem três tipos de variáveis, sendo elas: var (variable), let (let it change) e const (constant). A variável var cria um valor que pode ser alterado ao longo do código. A variável let funciona da mesma forma que a var, mas a sua escrita é mais aceita no meio da programação. A variável const cria um valor imutável, ou seja, não pode ser alterado ao longo do código.</p>
+            <p class="section__text">É importante, para nomear essas variáveis, dar nomes significativos e padronizados. Para fazer com que um nome de uma variável seja significativo, basta fazê-lo corresponder ao dado que ela for armazenar. Por exemplo: let nome = "Joao". Para fazer com que a digitação das variáveis seja padronizada, seguimos modelos denominados "cases". Sendo os mais famosos: snake e camel. As variáveis escritas conforme o primeiro case são nomeadas da seguinte forma: let nome_do_usuario = "Joao". Para o segundo: let nomeDoUsuario = "Joao". </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Operadores</h2>
+            <ol class="section__list">
+                <li>Aritméticos +, -, *, / e %</li>
+                <li>Agrupamento ( )</li>
+                <li>Atribuição =, +=, -=, *=, /= e %=</li>
+                <li>Encadeamento .</li>
+                <li>Incrementar ++ e Decrementar --</li>
+                <li>Concatenação de strings +</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Comentários</h2>
+            <p class="section__text">Os comentários são linhas do código que serão ignoradas pelo interpretador. Servem para deixar anotações e ajudar a entender e documentar o código.</p>
+            <h3 class="section__title-list">Como usar?</h3>
+            <ol class="section__list">
+                <li>Uma linha //</li>
+                <li>Várias linhas /*</li>
+                <li>*/</li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Recursos nativos do navegador</h2>
+            <p class="section__text">Console: objeto que representa o terminal interativo do navegador. Algumas funções: log, info, warm e error.</p>
+            <p class="section__text">Window: objeto que representa a aba atual do navegador. Algumas funções: alert, confirm e prompt.</p>
+            <p class="section__text">Document: objeto que representa a página html atual.</p>
+        </section>
+
+        <section class="section">
+            <h2 class="section_title">Comparação de dados</h2>
+            <p class="section_text">A comparação de dois dados retorna, no console, um resultado do tipo booleano (True ou False). Confira abaixo os tipos de operadores dessa natureza.</p>
+            <ol class="section__list">
+                <h3 class="section__title-list">Comparação de Igualde: == e ===</h3>
+                <li>== -> Compara dois valores tentando igualar os seus tipos. Por exemplo:</li>
+                <li>10 == 10 (True)</li>
+                <li>10 == "10" (True)</li>
+                <li>=== (mais restrito/mais utilizado) -> Compara dois valores, considerando o seu tipo. Por exemplo:</li>
+                <li>10 === 10 (True)</li>
+                <li>10 === "10" (False)</li>
+                <h3 class="section__title-list">Comparação de Diferença: != e !==</h3>
+                <li> != -> Compara dois valores tentando igualar os seus tipos. Por exemplo:</li>
+                <li> 5 != 5 (False)</li>
+                <li> 3 != 5 (True)</li>
+                <li> 3 != "5" (True)</li>
+                <li> !== (mais restrito/mais utilizado) -> Compara dois valores, considerando o seu tipo. Por exemplo:</li>
+                <li> 5 != "5" (True)</li>
+                <h3 class="section__title-list"> Maior/menor e Maior/Menor ou igual</h3>
+                <li> >, >=, <, <= </li>
+            </ol>
+        </section>
+
+        <section class="section">
+            <h2 class="section_title">Operadores Lógicos</h2>
+            <p class="section__text">Servem para avaliar operações envolvendo números booleanos. Ou seja, expressões envolvendo valores verdadeiro e falso.</p>
+
+            <!-- AND -->
+            <div>
+                <h3 class="section__title-list">E (AND) - &&</h3>
+                <p class="section__text">Só é verdadeiro se ambas as partes forem verdadeiras.</p>
+                <img class="section__img-table" src="https://miro.medium.com/v2/resize:fit:1316/1*wrRCwDAoUqHHALfHnu0Qmw.png" alt="Tabela verdade (AND)">
+                <p class="section__text">true && true === true <br> true && false === false <br> false && true === false <br> false && false === false</p>
+            </div>
+
+            <!-- OR -->
+            <div class="operation">
+                <h3 class="section__title-list">Ou (OR) - ||</h3>
+                <p class="section__text">Só é falso se ambas as partes forem falsas.</p>
+                <img class="section__img-table" src="https://miro.medium.com/v2/resize:fit:1310/1*MCO7lGwuIJxbmvRIXjrJoQ.png" alt="Tabela verdade (OR)">
+                <p class="section__text">true || true === true <br> true || false === true <br> false || true === true <br> false || false === false</p>
+            </div>
+
+            <!-- NOT -->
+            <div class="operation">
+                <h3 class="section__title-list">Não (NOT) - !</h3>
+                <p class="section__text">Inverte o resultado (de verdadeiro para falso e vice-versa).</p>
+                <img class="section__img-table" src="https://miro.medium.com/v2/resize:fit:1400/1*8E9UI2hsBWhIz5_SRvR5uQ.png" alt="Tabela verdade (NOT)">
+                <p class="section__text">! true === false <br> ! false === true</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section__title">Como adicionar o JavaScript no documento HTML</h2>
+            <p class="section__text">Para incorporar ou referenciar um script, escrito em JavaScript, dentro de uma página web, utilizamos, no documento HTML, a tag &ltscript&gt. Por exemplo:</p>
+            <h3 class="section__title-list">Incluindo o código Javascript diretamente no HTML:</h3>
+            <p class="section__text">&ltscript&gt <br>// Código JavaScript aqui <br> alert("Olá, mundo!"); <br> &ltscript&gt</p>
+            <h3 class="section__title-list">Referenciando um arquivo externo que contém o código Javascript:</h3>
+            <p class="section__text">&ltscript src="./meu-script.js"&gt&lt/script&gt</p>
+            <h3 class="section__title-list">Observações:</h3>
+            <p class="section__text"> A tag &ltscript&gt pode ser utilizada tanto na parte &lthead&gt quanto na parte &ltbody&gt de um documento HTML. No entanto, o posicionamento da tag &ltscript&gt pode ter implicações no desempenho da página e na execução do código JavaScript.
+            Quando você coloca a tag &ltscript&gt no &lthead&gt, o script é baixado e executado antes do conteúdo do corpo (&ltbody&gt) ser totalmente carregado. Isso significa que, se o script estiver manipulando elementos no DOM, pode haver problemas se esses elementos ainda não foram carregados.
+            Por esse motivo, muitas vezes é recomendado colocar scripts no final do corpo (&lt/body&gt) para garantir que o conteúdo HTML seja totalmente carregado antes que o script seja executado. Alternativamente, você pode usar o atributo defer na tag &ltscript&gt para indicar que o script deve ser deferido até que o HTML seja completamente analisado.
+            <br>
+            <strong>Exemplo de colocação no final do corpo:</strong>
+            <br> &lt!DOCTYPE html&gt <br> &lthtml&gt <br> &lthead&gt <br>  &lt!-- Meta tags, links para estilos, etc. --&gt <br> &lt/head&gt <br> &ltbody&gt <br> &lt!-- Conteúdo da página --&gt <br> &ltscript src="./index.js"&gt&lt/script&gt <br> &lt/body&gt <br> &lt/html&gt 
+            <br>
+            <strong>Exemplo de uso com defer no &lthead&gt:</strong> <br>
+            &lt!DOCTYPE html&gt <br> &lthtml&gt <br> &lthead&gt <br> &lt!-- Meta tags, links para estilos, etc. --&gt <br> &lt!-- O script será baixado de forma assíncrona, mas só será executado depois que o HTML for completamente analisado --&gt <br> &ltscript defer src="./index.js"&gt&lt/script&gt <br> &lt/head&gt <br> &ltbody&gt <br> &lt!-- Conteúdo da página --&gt <br> &lt/body&gt <br> &lt/html&gt</p>
+
+            <p class="section__text">Se você deseja exibir a tag &ltscript&gt como texto na sua página HTML, mas não quer que o navegador a interprete como uma tag HTML, você pode usar entidades HTML para representar os caracteres especiais. No caso do caractere &lt, você pode usar & lt; (sem espaço), e para &gt, você pode usar & gt; (sem espaço). Isso fará com que o navegador exiba os caracteres &lt e &gt como texto simples, sem interpretá-los como tags HTML.</p>
+        </section>
+    </main>
+</body>
+</html>l
