@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Formulário de Inscrição</title>
+    </head>
+    <body>
+        <h1>Formulário de Inscrição</h1>
+
+        <form action="#" method="post">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Ex.: João Lucas" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="joao.sampaio@email.com" required>
+            </div>
+            <br>
+
+            <div>
+                <label for="whatsapp">Whatsapp:</label>
+                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(27) 99991-0978">
+            </div>
+            <br>
+
+            <div>
+                <label>Área de atuação:</label>
+                <input type="radio" id="dev" name="atuacao" value="desenvolvimento">
+                <label for="dev">Desenvolvimento</label>
+                <input type="radio" id="qa" name="atuacao" value="quality assurance">
+                <label for="qa">Quality Assurance (QA)</label>
+                <input type="radio" id="ad" name="atuacao" value="analise de dados">
+                <label for="ad">Análise de Dados</label>
+                <input type="radio" id="inf" name="atuacao" value="infraestrutura">
+                <label for="radio">Infraestrutura</label>
+            </div>
+            <br>
+
+            <div>
+                <label for="obs">Observações:</label>
+                <br>
+                <textarea id="obs" name="observacao" cols="40" rows="6"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <input type="checkbox" id="check" name="ofertas por email" required>
+                <label for="check">Desejo receber novidades e ofertas por emails.</label>
+            </div>
+            <br>
+
+            <button type="submit">Enviar</button>
+
+
+        </form>
+    </body>
+</html>

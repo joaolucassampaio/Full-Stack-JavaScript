@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Trabalhando com links</title>
+    </head>
+    <body>
+        <h1>Trabalhando com links</h1>
+
+        <div>
+            <p>Navegue entre os arquivos das aulas:</p>
+            <a href="../títulos e parágrafos/index.html">Títulos e Parágrafos</a> |
+            <a href="../negrito e itálico/index.html">Negrito e Itálico</a> |
+            <a href="../imagens/index.html">Imagens</a> |
+            <a href="../exercício 1/index.html">Exercício 1</a> |
+            <a href="../div e span/index.html">Div e Span</a> |
+            <a href="../comentários/index.html">Comentários</a> |
+            <a href="../br e hr/index.html">br e hr</a> |
+        </div>
+
+        <p>Acessar a página do <a href="https://google.com" target="_blank">Google</a>.</p>
+
+        <div>
+        <p>Navegue entre as seções dessa página:</p>
+        <a href="#titulo-1">Título 1</a> |
+        <a href="#titulo-2">Título 2</a> |
+        <a href="#titulo-3">Título 3</a> |
+        <a href="#titulo-4">Título 4</a> |
+        <a href="#titulo-5">Título 5</a>
+        </div>
+
+        <h2 id="titulo-1">Título 1</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-2">Título 2</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-3">Título 3</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-4">Título 4</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-5">Título 5</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-6">Título 6</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+    
+        <h2 id="titulo-7">Título 7</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum necessitatibus fugit rerum at rem. Nisi, debitis ad suscipit a dignissimos sed repellendus commodi reprehenderit excepturi, eos praesentium perspiciatis ipsa repellat?</p>
+        
+    </body>
+</html>
+
+<!--Para criar links para outras páginas utilize a tag âncora, ou <a>. Ela é uma tag em linha, como a <strong>, <em> e <span>.
+    Para inserir um link utilize o atributo href.
+    Se quiser separar use | ou qualquer outro símbolo para referir uma divisão.
+    Utilzie ../ para voltar a arquivos em pastas anteriores. -->
+
+<!--Para criar links dentro da mesma página, que naveguem entre as seções do seu site (tipo sumário), você precisa criar o atributo id no título, parágrafo, imagem etc, nomear e chamá-lo da mesma forma que você faz com os links.-->
+
+<!--Para criar links externos você seguirá esse esquema:
+<p>Acessar a página do <a href="https://google.com" target="_blank">Google</a>.</p>
+Colocando o link dentro da palavra Google basta usar a tag <a> e o atributo href para o link desejado. Vale ressaltar que,
+como não se trata de uma url própria do nosso site (url relativa), devemos escrever o destino completo (url absoluta) inserindo
+http ou https(mais seguro). Caso queira que abra em uma nova aba, adicione o atributo target="_blank" -->

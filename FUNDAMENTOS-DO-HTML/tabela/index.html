@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Tabelas no HTML</title>
+    </head>
+
+    <body>
+        <h1>Criação de Tabelas</h1>
+        <table border="1"> <!--a tag table cria uma tabela e o atributo border adiciona uma borda-->
+            <tr><!--<tr> significa table roll, uma tag para criar as linhas dentro da tabela-->
+                <th>Coluna 1</th> <!--<th> é uma header cell, ou seja define o cabeçalho-->
+                <th>Coluna 2</th>
+            </tr> <!--Tudo que estiver dentro do <tr> estará na mesma linha-->
+            <tr> 
+                <td>Dado 1</td><!--a tag <td> define as colunas-->
+                <td>Dado 2</td>
+            </tr> <!--Caso queira adicionar mais dados a mesma coluna, precisará saltar de linha. Ou seja, criar um novo <tr>.
+                Se não, continuará adicionando mais colunas na mesma linha (tente adicionar mais <td> nessa linha e abra o live
+                server para entender melhor)-->
+            <tr>
+                <td>Dado 3</td>
+                <td>Dado 4</td>
+            </tr>
+        </table>
+<!--Resumindo até aqui, você criará uma linha <tr> e adicionará colunas <td> a ela.-->
+
+        <hr> <!--régua horizontal-->
+
+
+<!--Essa é uma outra forma de organizar o código das tabelas, o resultado será o mesmo. Eu pessoalmente achei mais organizado
+    Preste atenção que dessa forma acrescentará <thead> e <tbody> enquanto no exemplo anterior usava-se apenas <tr>.-->
+        <table border="1"> <!--o atributo border adiciona borda para a tabela-->
+            <thead> <!--tag para o cabecelhaço-->
+                <tr> <!--Tudo que estiver dentro do <tr> estará na mesma linha-->
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Profissão</th>
+                </tr>
+            </thead>
+                <tbody> <!--tag para o corpo da tabela-->
+                    <tr><!--Tudo que estiver dentro do <tr> estará na mesma linha-->
+                        <td>João</td>
+                        <td>23</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>30</td>
+                        <td>Advogada</td>
+                    </tr>
+                </tbody>
+        </table>
+
+        <hr>
+
+        <h2>Tabelas com células personalizadas</h2>
+        <table border="1"> <!--o atributo border adiciona borda para a tabela-->
+            <thead>
+            <tr>
+                <th colspan="2">Informações Pessoais</th> <!--o atributo colspan está dizendo esse cabecalhaço ocupará 2 colunas-->
+                <th>Contato</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Nome:</td>
+                <td>João</td>
+                <td rowspan="2">Telefone: 123456</td> <!--o atributo rowspan está fizendo que essa informação ocupará 2 linhas-->
+            </tr>
+            <tr>
+                <td>Idade:</td>
+                <td>30</td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+

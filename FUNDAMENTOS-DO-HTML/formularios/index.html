@@ -1,0 +1,50 @@
+<!--Os formúlarios em HTML são estruturas que permitem a coleta de informações dos usuários. Como nome, e-mail, senha, comentários etc.
+    Eles são compostos por elementos HTML que possibilitam a criação de campos de entrada, botões de envio e outras funcionalidades interativas.
+    Os formulários são compostos por:
+        Uma tag <form> com os atributos "action" e "method"
+        Campos a serem preenchidos, como <input> ou <select>
+        Um botão para enviar ou "submeter" o formulário: <button type="submit">Texto</button>-->
+
+        <html>
+          <head>
+            <title>Formulários do HTML</title>
+          </head>
+          <body>
+            <h1>Formulários do HTML</h1>
+          
+            <form action="http://google.com/search" method="get"> 
+              <label for="pesquisa">Pesquise no Google:</label> <!--a tag label dá a mesma função do input, através do for="id", para o texto "Pesquise no Google". É muito usado para acessibilidade, além de permitir nomear o seu o campo de entrada. Por exemplo, sem ela seria apenas uma caixa de entrada interativa, o usuário não saberia para que serve, com o label "Pesquise no Google", fica claro a sua funcionalidade. -->
+              <input type="text" name="q" id="pesquisa"> <!--A tag <input> é utilizada para criar um campo de entrada interativo. O atributo id, além de identificar, serve para fazer associações. O valor inserido em name será o resultado que será mandado ao back-end. Por exemplo, name=nome. No back-end, aparecerá como nome=o que foi digitado.-->
+              <button type="submit">Pesquisar</button> <!--a tag <button> cria um botão interativo-->
+            </form>
+          </body>
+          </html>
+
+          <!--A tag <form> é usada para criar um formulário. O atributo action  especifica a URL para a qual os dados do formulário serão enviados quando o formulário for submetido. O atributo method em HTML é usado dentro da tag <form> para especificar qual método HTTP será utilizado ao enviar os dados do formulário para o servidor. Os dois valores mais comuns para o atributo method são "GET" e "POST"
+            GET:
+          Quando o método GET é utilizado, os dados do formulário são anexados à URL como parâmetros de consulta.
+          Este método é geralmente utilizado para formulários que realizam buscas ou recuperam informações do servidor.
+          As informações enviadas são visíveis na barra de endereços do navegador.
+          Exemplo:
+          <form action="/buscar" method="GET">
+            <label for="termoBusca">Pesquisar:</label>
+            <input type="text" id="termoBusca" name="q">
+            <input type="submit" value="Buscar">
+          </form>
+          
+          Se o usuário inserir "exemplo" na caixa de texto e enviar o formulário, a URL resultante será algo como /buscar?q=exemplo.
+          
+          POST:
+          Quando o método POST é utilizado, os dados do formulário são enviados no corpo da requisição HTTP, e não são visíveis na URL.
+          Este método é frequentemente utilizado quando o formulário envia informações sensíveis, como senhas.
+          O método POST é mais seguro que o GET para informações confidenciais.
+          Exemplo:
+          <form action="/processar" method="POST">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha">
+            <input type="submit" value="Enviar">
+          </form>
+          Os dados do formulário são enviados no corpo da requisição, e o usuário não verá os detalhes da senha na URL.
+          
+          Em resumo, o atributo method determina como os dados do formulário serão enviados para o servidor. Se você estiver enviando dados sensíveis ou grandes quantidades de dados, o método POST é geralmente mais apropriado. Se estiver apenas recuperando informações, o método GET pode ser suficiente.
+          -->
