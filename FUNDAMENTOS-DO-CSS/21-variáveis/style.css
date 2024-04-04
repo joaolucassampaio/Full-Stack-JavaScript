@@ -1,0 +1,42 @@
+/*
+Uma variável, na programção, é uma forma de armenezar e memorizar algum valor. É possível, através dela, padronizar todos os valores ao longo do código, o que contribuí, e muito, para a estilização de um site.
+No CSS, para criar variáveis globais, usamos o seletor :root (raíz) e dentro dele definimos os nomes iniciados por "--". É uma vantagem porque, fazendo isso, você centralizará todas as variáveis utilizadas ao digitar o código.
+*/
+
+/*Centralizando e definindo variáveis globais na raíz:*/
+:root {
+    --cor-principal: #3c59e7;
+    --cor-claro: #cfc9c9;
+    --cor-escuro: #232323;
+    --preenchimento-pq: .25rem 1rem; /*0.25 = altura; 1 = largura.*/
+    --preenchimento-md: 2rem;
+    --preenchimento-gd: 4rem;
+}
+
+/*Mudando elementos do cabeçalho através das variáveis globais:*/
+header {
+    background-color: var(--cor-escuro);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pq);
+}
+
+/*Mudando elementos da seção através das variáveis globais:*/
+section {
+    background-color: var(--cor-claro);
+    padding: var(--preenchimento-md);
+}
+
+/*Quando necessário, também podemos modificar variáveis dentro de um elemento específico. Dessa forma, o novo valor só será válido dentro daquele mesmo elemento:*/
+
+/*Modificando a variável global "--preenchimento-pq" dentro do elemento "div":*/
+div {
+    --preenchimento-pq: 1rem;
+    background-color: var(--cor-principal);
+    color: var(--cor-claro);
+    padding: var(--preenchimento-pq);
+}
+
+/*Modificando a variável global "--cor-principal" dentro da classe "red-box":*/
+.red-box {
+    --cor-principal: #f64348;
+}

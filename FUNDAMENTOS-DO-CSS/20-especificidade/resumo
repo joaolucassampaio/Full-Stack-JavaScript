@@ -1,0 +1,64 @@
+O que é a especificidade?
+
+A especificidade é um conceito que determina a ordem de prioridade das regras CSS que se aplicam a elementos HTML. Essas regras são todo o código escrito no arquivo externo "style.css" ou "inline" (código CSS escrito no próprio "index.html"), que tem como objetivo estilizar os elementos, <tags>, escritos no HTML.
+
+Ela determina quais estilos devem ser aplicados quando há regras conflitantes. Para isso, há uma espécie de "pontuação" atribuída a diferentes seletores e estilos.
+
+Como funciona?
+
+1° Atribuição de pontuação:
+
+# Cada tipo de seletor (ID, classe, tipo de elemento, etc.) recebe uma pontuação.
+# Quanto mais específico é o seletor, maior a pontuação.
+
+2° Resolução de Conflitos:
+
+# Quando dois ou mais estilos entram em conflito, o navegador compara a pontuação de especificidade.
+# A regra com a pontuação mais alta é aplicada.
+
+Níveis de especificidade (pontuação):
+
+1. Estilos Inline (ex.: style="color: red;"): Pontuação Máxima (especificidade: 1,0,0,0)
+
+2. ID (ex.: #meuID): Pontuação Alta (especificidade: 0,1,0,0)
+
+3. Seletores de Classe: Pontuação Média  (especificidade: 0,0,1,0)
+    O seletor de classe é usado para selecionar elementos que possuem uma determinada classe. As classes são precedidas por um ponto (.).
+    Por exemplo:
+.destaque {
+    font-weight: bold;
+    color: red;
+  }
+
+4. Seletores de Tipo: Pontuação Baixa (especificidade: 0,0,0,1)
+    O seletor de tipo é usado para selecionar todos os elementos de um determinado tipo. Por exemplo, para selecionar todos os parágrafos (<p>).
+        Por exemplo:
+        p {
+          color: blue;
+        }
+
+5. Seletor Universal: Pontuação Baixíssima
+    O seletor universal (*) é usado para selecionar todos os elementos na página.
+    Por exemplo:
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+Por que é importante?
+
+Evitar Conflitos: Ajuda a resolver conflitos de estilos.
+Priorização: Permite que você especifique quais estilos devem ser mais importantes em determinadas situações.
+Entendimento da Cascata: Contribui para entender como o CSS segue a "cascata" (do geral para o específico).
+
+# Lembretes:
+
+1. Quando múltiplos seletores se aplicam a um elemento, suas especificidades se somam.
+    Por exemplo:
+    body > h1 {
+        color: red;
+    }
+    Quando você passar o mouse, verá que a especificidade do seletor estará (0,0,2) porque somará
+
+2. A ordem dos seletores também importa em casos de empate na especificidade.

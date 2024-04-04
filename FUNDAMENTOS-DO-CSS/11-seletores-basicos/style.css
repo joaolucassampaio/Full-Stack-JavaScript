@@ -1,0 +1,78 @@
+/*O objetivo principal dos seletores é economizar códigos.*/
+
+/* seletor universal (AJUDA MUITO NA ESTILIZAÇÃO DA PÁGINA!!!) */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* O seletor universal é muito importante, porque ele é utilizado para evitar discrepâncias na estilização das páginas entre os diferentes navegadores (cada navegador apresenta uma estilização diferente). Pode-se, com ele, zerar todos os estilos presentes, para que as páginas possam ser manipuladas com consistência. */
+
+/* seletor de tag */
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+/*O seletor de tag permite a aplicação de estilos às tags desejadas (pode-se padronizar mais de uma, caso desejar).*/
+
+/* seletor de elementos aninhados */
+nav a {
+    color: #27ae60;
+}
+/*nav (espaço) a {} = pega todos elementos a dentro da tag nav*/
+
+/* seletor de filhos */
+nav > a {
+    display: block;
+    color: #f5a623;
+    padding: 10px;
+}
+/*Modifica um elemento dentro do nav.*/
+
+/* seletor de classes */
+.laranja {
+    color: #f5a623;
+}
+.verde {
+    color: #27ae60;
+}
+/*Seleciona todos elementos idenfiticados pela classe.*/
+
+/* seletor de id */
+#secao-principal {
+    padding: 20px;
+    text-align: center; /*Alinha o texto ao centro.*/
+}
+/*Seleciona todos elementos idenfiticados pelo id.*/
+
+/* combinação de seletores */
+#secao-principal > * {
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+/*Aqui está sendo combinado dois seletores, que, na prática, está selecionando todos os elementos dentro da seção principal.*/
+
+/* seletor de sequência */
+input + input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 + p {
+    padding: 30px;
+}
+/*É usado para selecionar todos os elementos após um determinado elemento (dentro de um mesmo pai)*/
+
+/* seletores de propriedade */
+input[name="email"] {
+    background-color: #f5a623;
+}
+
+input[type="password"] {
+    background-color: #27ae60;
+}
+/*Utiliza as propriedades para identificar um item.*/

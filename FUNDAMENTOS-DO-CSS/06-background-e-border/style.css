@@ -1,0 +1,39 @@
+body {
+    background-image: url("https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg"); /*define uma imagem de fundo*/
+    background-size: cover;  /*define o tamanho da imagem de fundo e o cover faz com ela cubra toda a página*/
+}
+
+header {
+    background-color: #333; /*muda a cor do background, 333 é uma abreviação*/
+    color: #fff; /*muda a cor do título, fff é uma abreviação*/
+}
+
+main {
+    background-color: #e5e5e5;
+    border-width: 4px;
+    border-color: #1c1a1d;
+    border-style: solid; /*Propriedade usada para definir o estilo de linha das bordas de um elemento.*/
+}
+
+.box1 {
+    background-color: #169436;
+    border: dashed 2px #1c1a1d; /*forma mais prática de escrever o border*/
+    height: 64px; /*define a altura do bloco*/
+    width: 320px; /*define o comprimento do bloco*/
+}
+
+.box2 {
+    background-image: linear-gradient(45deg, #2c2c2d, #f64348); /*define uma variação de cor, podendo ser linear ou em graus*/
+    border-top: 4px dotted #1c1a1d; /*define a borda somente para o topo*/
+    height: 64px;
+    width: 320px;
+}
+
+.box3 {
+    background-color: #0077ff;
+    border: 2px solid #1c1a1d;
+    border-top-right-radius: 40px; /*arredonda a borda superior direita*/
+    border-bottom-left-radius: 40px; /*arredonda a borda inferior esquerda*/
+    height: 64px;
+    width: 320px;
+}

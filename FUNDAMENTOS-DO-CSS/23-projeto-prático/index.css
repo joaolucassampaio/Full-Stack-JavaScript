@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /**/
+    font-family:"Oxygen", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root {
+    --color-background: #030207;
+    --color-white: #fff;
+    --color-blue: #1474b4;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-white);
+}
+
+a {
+    color: var(--color-blue);
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--color-background)); /*rgba= RED, GREEN, BLACK, ALPHA (Transparência). O código escrito dessa forma permite um efeito gradiente do transparente até a cor do background.*/
+    position: relative;
+    min-height: 100vh; /*Mínimo da altura sendo 100% da view height.*/
+}
+
+.hero__background {
+    object-fit: cover; /*Faz o elemento ser exibido completamente.*/
+    position: absolute;
+    width: 100%; /*Largura exatamente do tamanho da tela.*/
+    height: 100vh; /*Altura em 100% do tamanho do view port.*/
+    z-index: -10; /*Controla o eixo z, sendo (-) o elemento aparecerá atrás.*/
+    top: 0; /*Posiciona, manualmente, o elemento para o topo.*/
+}
+
+/*A propriedade "position" permite que o elemento possa ser posicionado de forma manual, sem seguir a ordem de cascada. Quando usado como "absolute", o elemento ficará fora da pilha padrão e os outros elementos começarão a aparecer por cima dele.*/
+
+
+/*Seção hero:*/
+.hero__foreground {
+    color: var(--color-white);
+    text-align: center; /*Centralizando o texto*/
+    padding-top: 40vh; /*Colocando preenchimento para alinhar o texto.*/
+}
+
+.hero__title {
+    font-size: 5rem; /*Aumentando o tamanho do texto.*/
+    font-weight: 300; /*Diminuindo a espessura do texto.*/
+}
+
+.hero__text {
+    margin-top: 2rem; /*Aumentando o espaçamento do texto ao título.*/
+    letter-spacing: 0.5rem; /*Aumentando o espaçamento entre as letras.*/
+    text-transform: uppercase; /*Deixando o texto em caixa alta.*/
+}
+
+/*Seção section:*/
+.section {
+    overflow: hidden; /*Controla o transbordamento da imagem.*/
+    padding: 0 8rem; /*Aplicando preenchimento; vertical = 0; horizontal = 8.*/
+    text-align: center; /*Centralizando o texto*/
+}
+
+.section__title {
+    font-size: 3rem; /*Aumentando o tamanho do texto.*/
+    font-weight: 300; /*Diminuindo a espessura do texto.*/
+    margin: 4rem auto; /*Usando auto para centralizar o título.*/
+}
+
+.section__img,
+.section__img-inline {
+    border-radius: .75rem; /*Arredondando os cantos das imagens.*/
+    /* eixo x, eixo y, blur, expansão/recuo, cor */
+    box-shadow: 0 1rem 2rem -.05rem rgba(20, 116, 100, 0.25); /*Controla o sombreamento da box.*/
+    width: 100%; /*Imagem 100% do tamanho da section, o que impede que ela transborde para o lado de fora da página.*/
+    object-fit: cover; /*Faz o elemento ser exibido completamente.*/
+    object-position: top; /*A imagem começará a ser exibida pelo topo.*/
+    position: relative;
+    max-height: 30rem; /*Altura máxima da imagem.*/
+}
+
+.section__text,
+.section__text-inline {
+    font-size: 1.25rem;
+    line-height: 1.75; /*Aumenta a distância entre as linhas.*/
+    margin: 4rem auto; /*Usando auto para centralizar o texto.*/
+}
+
+.section__img-inline {
+    border-top-left-radius: 4rem; /*Arredondando a borda superior esquerda.*/
+    border-bottom-right-radius: 4rem; /*Arredondando a borda inferior direita.*/
+    float: left; /*Faz a imagem flutuar na página, colocando ela ao lado do texto.*/
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+    height: 25rem;
+    width: 20rem;
+}
+
+.section__text-inline {
+    margin-top: 6rem;
+    text-align: left; /*Alinha o texto à esquerda.*/
+}
+
+/*Abaixo temos um seletor de filhos.*/
+.section__text-inline > p {
+    margin-top: 1.5rem; /*Aplicando margem aos elementos filhos.*/
+}
+
+/*Abaixo temos um seletor de id usando o elemento img.*/
+#hangouts img {
+    object-position: center; /*Centralizando a imagem da parte "Hangouts".*/
+}
+
+.gallery__img {
+    border-radius: .75rem;
+    height: 16rem;
+    width: 16rem;
+    object-fit: cover;
+    transform: rotate(-2deg); /*Rotacionando as imagens em -2 graus.*/
+}
+
+.gallery__img-wrapper {
+    display: inline-block;
+    position: relative; 
+}
+
+/*Abaixo temos um seletor de sequência.*/
+.gallery__img-wrapper + .gallery__img-wrapper {
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+/*Abaixo temos um seletor de filhos + :nth-child(). O que, na prática, está selecionando todos os elementos pares dentro da classe "gallery__img".*/
+.gallery__img-wrapper:nth-child(even) > .gallery__img {
+    transform: rotate(2deg); /*Rotacionando as imagems em 2 graus.*/
+}
+
+/*Criando o efeito de "alfinete" nas imagens:*/
+.gallery__img-wrapper::after {
+    content: "";
+    background-color: rgb(228, 26, 26);
+    border-radius: 999px;
+    display: block;
+    height: 1.25rem;
+    width: 1.25rem;
+    position: absolute;
+    top: 0.25rem;
+    right: 1rem;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem;
+    text-align: center;
+}

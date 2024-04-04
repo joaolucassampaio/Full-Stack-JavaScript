@@ -1,0 +1,32 @@
+/*Sugestão: teste as diferentes opções das propriedaes abaixo.*/
+header {
+    text-align: center; /*Alinha o texto.*/
+    text-decoration: underline; /*Estilos de decorações para o texto (caso for none, removerá todas decorações definidas).*/
+    text-transform: uppercase; /*Transforma o texto conforme a opção escolhida.*/
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif; /*Define a fonte principal e opções de fallback (plano B), caso a primeira escolha não esteja instalada no computador do usuário (para evitar esse tipo de problema, é possível incluir o arquivo da fonte no próprio site).*/
+    font-weight: 400; /*Define a espessura da fonte. Clicando em "read more", encontrará as especificações de cada numereação. */
+}
+
+h2 {
+    font-size: 16px; /*Define o tamanho da fonte.*/
+    letter-spacing: 8px; /*Define o espaçamento entre as letras.*/
+    text-transform: uppercase;
+}
+
+p {
+    font-family:'Montserrat', sans-serif; /*Fonte adicionada através do Google Fonts*/
+}
+
+/*Aprendi a usar negrito e itálico através das tags <strong> e <em>, respectivamente. Entretanto, a forma mais aceitável é através das classes, conforme representado abaixo.*/
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); -- Outra forma de adicionar fontes pelo Google Fonts.*/

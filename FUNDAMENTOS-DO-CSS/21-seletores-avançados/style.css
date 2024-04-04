@@ -1,0 +1,76 @@
+/*
+Seletor :nth-child()
+"nth" representa um número ordinário qualquer, no inglês a maioria desses números terminam em "th", por exemplo: 4h (Fourth), 5th (Fifth) e 6th (Sixth). 
+Eles são utilizados para escolher filhos específicos de um determinado tipo.
+*/
+
+/*Mudando a cor do filho 1 da lista:*/
+li:nth-child(1) {
+    color: #0fd877 
+}
+
+/*Os parênteses aceitam operações matemáticas. Por exemplo (2n) e (2n-1).*/
+/*Para par ou ímpar, pode-se utilizar as palavras em inglês: even e odd, respectivamente.*/
+/*Mudando a cor dos filhos pares da lista:*/
+li:nth-child(2n) {
+    color:#ffd000
+}
+
+/*
+Seletores de estado; são responsáveis por mudar o comportamento do elemento na página. Temos, dentre eles:
+:hover
+:focus
+*/
+
+/*Mudando a cor e o fundo do elemento ao passar o cursor:*/
+li:hover {
+    background-color: #232323;
+    color: #fff;
+}
+
+/*Mudando o fundo do elemento ao clicar para digitar: */
+input:focus {
+    background-color: #ff0000;
+}
+
+/*
+Pseudo-elementos; 
+ Cada elemento no HTML pode possuir dois elementos extras associados a ele, um antes e outro depois. Podemos referenciar esses pseudo-elementos através dos seletores ::before e ::after.
+*/
+
+/*Adicionando um texto antes dos elementos na lista:*/
+li::before {
+    content: "(antes) ";
+  }
+
+/*Adicionando um texto depois dos elementos na lista:*/
+  li::after {
+    content: " (depois)";
+  }
+
+/*
+Semelhante ao nth-child, temos o first-child e last-child para primeiros e últimos filhos de um tipo de elemento, respectivamente:
+*/
+
+/*Mudando a cor do primeiro filho da lista:*/
+li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+/*Mudando a cor do último filho da lista:*/
+li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+/*
+Por fim, também temos o :not(), que permite “negar”, ou inverter, um determinado seletor. Nesse exemplo o usamos para estilizar os filhos que não são o primeiro:
+*/
+
+/*Mudando a cor de todos os filhos que não são o primeiro da lista:*/
+li:not(:first-child) {
+    color: rgb(0, 255, 255);
+}
+
+/*
+Existem muitos outros seletores, então não temos como falar sobre todos eles agora. Mas sua utilização é parecida com esses que vimos, que são os mais comuns, então a partir de agora você deve ser capaz de pesquisar na documentação e utilizar novos seletores a medida que forem necessários.
+*/

@@ -1,0 +1,54 @@
+header {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #232323;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: serif;
+}
+
+.parent {
+    font-size: 1.25rem;
+    color: #f64348;
+}
+
+.child {
+    font-size: 2rem;
+    color: #00ff9f;
+}
+
+/*No contexto do HTML, a herança refere-se à capacidade de um elemento HTML herdar propriedades de seus elementos ancestrais na hierarquia do documento. Em outras palavras, os elementos filhos podem herdar características e estilos de seus elementos pai. Isso ajuda a simplificar a estrutura do código, permitindo que você defina estilos em um nível mais amplo e, em seguida, deixe que esses estilos se apliquem automaticamente aos elementos descendentes.
+
+Por exemplo, se você define um estilo de fonte ou cor em um elemento pai, esses estilos podem ser herdados pelos elementos filhos, a menos que esses elementos filhos tenham estilos próprios que anulem a herança.
+
+A herança no HTML não é aplicada a todas as propriedades CSS. Algumas propriedades são herdadas por padrão, enquanto outras não. Por exemplo, propriedades relacionadas ao layout, como largura e altura, geralmente não são herdadas.
+
+É importante mencionar que a herança pode ser afetada por outras regras CSS específicas aplicadas ao elemento filho ou por propriedades que anulem explicitamente a herança. O uso adequado da herança pode simplificar a folha de estilo e melhorar a consistência visual em uma página da web.
+
+No contexto do HTML e da estrutura de documentos da web, os termos "elemento pai" e "elemento filho" referem-se à relação hierárquica entre diferentes tags HTML em uma página. Cada tag HTML pode conter outros elementos, e isso cria uma hierarquia de elementos.
+
+Elemento Pai: É um elemento que contém outros elementos dentro dele. Pode haver vários níveis de elementos pai. Por exemplo:
+
+<div> <!-- div é o elemento pai -->
+  <p>Este é um parágrafo.</p> <!-- p é o elemento filho de div -->
+  <ul> <!-- ul é o elemento filho de div -->
+    <li>Item 1</li> <!-- li é o elemento filho de ul -->
+    <li>Item 2</li> <!-- li é o elemento filho de ul -->
+  </ul>
+</div>
+
+Elemento Filho: É um elemento contido dentro de outro elemento, ou seja, está aninhado dentro de um elemento pai. No exemplo acima, <p>, <ul>, e os <li> são elementos filhos do <div>.
+*/

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #232323;
+    color: #fff;
+    padding: 10px;
+}
+
+section {
+    background-color: #ddd;
+    height: 100px;
+}
+
+.box {
+    border: 1px solid #232323;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 75px;
+}
+
+/*Pixel: Unidade fixa, pouco usada (a não ser para valores muito pequenos).*/
+/*Contras: Como é uma unidade fixa, 10px são 10px independente do monitor. O problema é que 10px pode ser muito para um monitor pequeno, enquanto é pouco para um monitor grande. */
+.px {
+    height: 10px;
+}
+
+/* REM (Root Element): Unidade baseada em múltiplos de 16, muito usada.*/
+/*Prós: Como o tamanho dela é baseado na fonte do elemento root, que por padrão dos navegadores é 16px (o usuário pode alterar), ele é bem útil por padronizar o visual do site (porque mesmo que o usuário altere a fonte do elemento root, a escala que o site irá aumentar sempre será a mesma).*/
+.rem {
+    height: 3rem; /*rem = 16px .: 3rem = 48px*/
+}
+
+/*Tamanho baseado na fonte do próprio elemento.*/
+.em {
+    font-size: 20px;
+    padding: 1em;
+}
+
+/*Tamanho baseado na altura ou largura do elemento py.*/
+.prcnt-33 {
+    height: 33%;
+}
+
+.prcnt-66 {
+    height: 66%;
+}
+
+.prcnt-100 {
+    height: 100%;
+}
+
+/*Baseados na porcentagem da view port.*/
+/* viewport height */
+.vh {
+    height: 30vh;
+}
+
+/* viewport width */
+.vw {
+    width: 50vw;
+}

@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+figure {
+    text-align: center;
+}
+
+
+button {
+    background-color: #44abf3;
+    color: #ffffff;
+    border:#44abf3 15px solid;
+    border-radius: 25px;
+    margin-left: 3px;
+    margin-right: 3px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: #000000;
+    text-transform: uppercase;
+    border:#000000 15px solid;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    height: 3rem;
+}
+
+.credits {
+    padding-top: 1rem;
+}

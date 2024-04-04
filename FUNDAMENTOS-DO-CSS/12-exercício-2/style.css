@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px
+}/*ajusta a formatação da página*/
+
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+} /*personaliza o estilo do cabeçalho*/
+
+body {
+    background-color: #ffffff;
+}/*personaliza o estilo do corpo*/
+
+h1{
+    margin-top: 32px;
+    margin-left: 32px;
+}/*personaliza o estilho do título h1*/
+
+li {
+    background-color: #000000;
+    color:#ffffff;
+    border: 4px solid transparent;
+    border-radius: 4px;
+    cursor: pointer; /*modifica o cursor ao passar pelos elementos da li, o pointer é um tipo que indica algo clicável.*/
+    
+    display:inline-block;
+    margin-top: 32px;
+    margin-left: 32px;
+    padding: 32px;
+    height: 250px;
+    width: 400px;
+}/*personaliza o estilo da tag li*/
+
+.selected {
+    background-color: hsl(0, 0%, 10%); /*muda o brilho se selecionado*/
+    border: 4px solid #466af8 /*muda a borda se selecionado*/
+}/*personaliza o estilo da class selected*/
+
+.hidden {
+    display: none; /*display:none oculta os elementos envolvidos*/
+}/*personaliza o estilo da class .hidden*/
